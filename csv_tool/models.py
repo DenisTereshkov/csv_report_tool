@@ -7,6 +7,6 @@ class EmployeeRow:
     position: str
     completed_tasks: int
     performance: float
-    skils: str
+    skills: str
     team: str
-    expirience_years: int
+    experience_years: int

@@ -15,9 +15,9 @@ def read_csv(file_paths: List[str]) -> List[EmployeeRow]:
                     position=row['position'],
                     completed_tasks=int(row['completed_tasks']),
                     performance=float(row['performance']),
-                    skils=row['skils'],
+                    skills=row['skills'],
                     team=row['team'],
-                    expirience_years=int(row['expirience_years'])
+                    experience_years=int(row['experience_years'])
                 )
                 employees.append(employee)
     return employees
