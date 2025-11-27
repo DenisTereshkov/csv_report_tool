@@ -4,16 +4,6 @@ from csv_tool.file_reader import read_csv
 from csv_tool.models import EmployeeRow
 
 
-@pytest.fixture
-def sample_csv():
-    return "tests/test_data/sample1.csv"
-
-
-@pytest.fixture
-def another_sample_csv():
-    return "tests/test_data/sample2.csv"
-
-
 def test_read_csv(sample_csv):
     employees = read_csv([sample_csv])
     assert len(employees) == 2
